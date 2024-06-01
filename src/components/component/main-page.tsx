@@ -103,13 +103,15 @@ export function MainPage() {
                 solutions innovantes aux entreprises de divers secteurs.
               </p>
               <div className="flex gap-4">
-                <Button className="bg-[#004080] hover:bg-[#0073e6] text-white">Découvrir nos produits</Button>
+              <Link href="#products">
+                <Button className="bg-[#004080] hover:bg-[#0073e6] text-white">Découvrir nos produits</Button></Link>
+                <Link href="#contact">
                 <Button
                   className="border-[#d9d9d9] text-[#d9d9d9] hover:bg-[#d9d9d9] hover:text-[#404040]"
                   variant="outline"
                 >
                   Nous contacter
-                </Button>
+                </Button></Link>
               </div>
             </div>
             <Image
