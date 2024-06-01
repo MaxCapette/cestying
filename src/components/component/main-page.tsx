@@ -107,7 +107,7 @@ export function MainPage() {
                 <Button className="bg-[#004080] hover:bg-[#0073e6] text-white">Découvrir nos produits</Button></Link>
                 <Link href="#contact">
                 <Button
-                  className="border-[#d9d9d9] text-[#d9d9d9] hover:bg-[#d9d9d9] hover:text-[#404040]"
+                  className="bg-[#ff6600] border-[#d9d9d9] text-white hover:bg-[#d9d9d9] hover:text-[#404040]"
                   variant="outline"
                 >
                   Nous contacter
@@ -184,11 +184,11 @@ export function MainPage() {
             </div>
           </div>
         </section>
-        <section className="bg-[#d9d9d9] dark:bg-[#404040] py-12 md:py-24 lg:py-32" id="services">
+        <section className="bg-[#404040] dark:bg-[#404040] py-12 md:py-24 lg:py-32" id="services">
           <div className="container px-4 md:px-6 space-y-8">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Nos services</h2>
-              <p className="text-[#404040] dark:text-[#d9d9d9] max-w-[600px] mx-auto text-lg">
+              <h2 className="text-[#d9d9d9] text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Nos services</h2>
+              <p className="text-[#d9d9d9] dark:text-[#d9d9d9] max-w-[600px] mx-auto text-lg">
                 Découvrez comment nos services complets peuvent soutenir vos besoins industriels.
               </p>
             </div>
@@ -247,7 +247,7 @@ export function MainPage() {
           </div>
         </section>
        
-        <section className="bg-[#d9d9d9] dark:bg-[#404040] py-12 md:py-24 lg:py-32" id="contact">
+        <section className="bg-[#d9d9d9] dark:bg-[#404040] py-12 md:py-24 lg:py-32 container mb-10" id="contact">
           <ContactPage />
         </section>
       </main>
