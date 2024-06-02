@@ -259,7 +259,7 @@ export function MainPage() {
           <div className=" mx-auto px-4 md:px-6 flex flex-col md:flex-column items-center justify-between">
           <p className=" dark:text-gray-400 mt-4 ">3 Rue du Colonel Fabien</p>
           <p className=" dark:text-gray-400  ">93300 Aubervilliers</p>
-          <p className=" dark:text-gray-400 mt-4 ">contact@divine-pay-systems.fr</p>
+          <p className=" dark:text-gray-400 mt-4 ">contact@cesty-ing.fr</p>
           <p className=" dark:text-gray-400 mt-4 ">TEL: 01 85 10 03 72</p>
           </div>
        
