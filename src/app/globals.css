@@ -25,3 +25,12 @@ header {
 .topo {
   padding-top: 150px !important;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    
+  }
+}
