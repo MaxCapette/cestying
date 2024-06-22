@@ -33,7 +33,7 @@ import { GaugeIcon } from "lucide-react";
 export function MainPage() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className=" text-white px-4 lg:px-6 h-14 flex items-center justify-between">
+      <header className=" text-white px-4 lg:px-6 h-14 flex items-center justify-between w-[90%] p-[15px] rounded-[5px] fixed top-[5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-90 z-10   ">
         <Link className="flex items-center gap-2" href="#">
           <GaugeIcon className="h-6 w-6" />
           <span className="text-lg font-semibold">CESTY ING</span>
