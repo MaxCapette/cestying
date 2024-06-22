@@ -25,7 +25,7 @@ To read more about using these font, please visit the Next.js documentation:
 **/
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet"
+import { SheetTrigger, SheetContent, Sheet, SheetClose } from "@/components/ui/sheet"
 import ContactPage from "../contact/contact";
 import Image from "next/image";
 import { GaugeIcon } from "lucide-react";
@@ -39,12 +39,7 @@ export function MainPage() {
           <span className="text-lg font-semibold">CESTY ING</span>
         </Link>
         <nav className="hidden md:flex gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4 dark:text-gray-400 dark:hover:text-gray-300"
-            href="#"
-          >
-            Acceuil
-          </Link>
+          
           <Link className="text-sm font-medium hover:underline underline-offset-4 dark:text-gray-400 dark:hover:text-gray-300" href="#products">
               Produits
             </Link>
@@ -65,31 +60,37 @@ export function MainPage() {
           </Link>
         </nav>
         <Sheet>
-          <SheetTrigger asChild>
-            <Button className="lg:hidden" size="icon" variant="ghost">
-              <MenuIcon className="h-6 w-6" />
-              <span className="sr-only">Basculer la navigation</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent className="bg-[#404040] text-white p-6 grid gap-4" side="left">
-            <Link className="font-semibold text-lg" href="#">
-              Accueil
-            </Link>
-            <Link className="font-semibold text-lg" href="#products">
-              Produits
-            </Link>
-            <Link className="font-semibold text-lg" href="#services">
-              Services
-            </Link>
-            <Link className="font-semibold text-lg" href="#about">
-              À propos
-            </Link>
-           
-            <Link className="font-semibold text-lg" href="#contact">
-              Contact
-            </Link>
-          </SheetContent>
-        </Sheet>
+            <SheetTrigger asChild>
+              <Button className="md:hidden" size="icon" variant="ghost">
+                <MenuIcon className="h-6 w-6" />
+                <span className="sr-only  ">Toggle menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent className="w-full max-w-xs bg-gray-100 dark:bg-gray-800 p-6" side="right">
+              <div className="flex flex-col gap-6">
+                <SheetClose asChild>
+              <Link className="font-medium hover:text-gray-900 dark:hover:text-gray-50" href="#about">
+                  À propos
+                </Link> 
+                </SheetClose>
+                <SheetClose asChild>
+                <Link className="font-medium hover:text-gray-900 dark:hover:text-gray-50" href="#services">
+                  Services
+                </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                <Link className="font-medium hover:text-gray-900 dark:hover:text-gray-50" href="#products">
+                  Produits
+                </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                <Link className="font-medium hover:text-gray-900 dark:hover:text-gray-50" href="#contact">
+                  Contact
+                </Link>
+                </SheetClose>
+              </div>
+            </SheetContent>
+          </Sheet>
       </header>
       <main className="flex flex-col items-center justify-center">
         <section className="bg-[#404040] text-white py-12 md:py-24 lg:py-32 topo">

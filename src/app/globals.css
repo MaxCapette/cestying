@@ -6,21 +6,7 @@ footer, header {
   background-color: #004080;
   color: white;
 }
-header {
-  width: 90%;
-  padding: 15px;
-  border-radius: 5px;
-  position: fixed;
-  top: 7%;
-  /* Position à 50% du haut */
-  left: 50%;
-  /* Position à 50% de la gauche */
-  transform: translate(-50%, -50%);
- 
 
-  opacity: 0.9;
-  z-index: 1;
-}
 
 .topo {
   padding-top: 150px !important;

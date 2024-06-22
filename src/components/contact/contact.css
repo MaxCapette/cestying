@@ -43,3 +43,8 @@ textarea {
 .inputColor {
   color: black;
 }
+
+#message {
+  width: 350px;
+  height: 200px;
+}
