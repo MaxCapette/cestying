@@ -23,7 +23,7 @@ const FormContact: React.FC = () => {
         Envoyer
       </button>
 
-      {state.succeeded && <p className="text-gray-900">Merci!</p>}
+      {state.succeeded && <p className="text-black">Merci!</p>}
     </form>
   );
 };
