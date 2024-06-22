@@ -261,7 +261,7 @@ export function MainPage() {
           <p className=" dark:text-gray-400 mt-4 ">3 Rue du Colonel Fabien</p>
           <p className=" dark:text-gray-400  ">93300 Aubervilliers</p>
           <p className=" dark:text-gray-400 mt-4 ">contact@cesty-ing.fr</p>
-          <p className=" dark:text-gray-400 mt-4 ">TEL: </p>
+          <p className=" dark:text-gray-400 mt-4 ">TEL: 01 84 21 09 92</p>
           </div>
        
       </footer>
